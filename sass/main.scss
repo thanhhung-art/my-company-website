@@ -1,4 +1,45 @@
 .wrapper {
     max-width: 1300px;
     width: 100%;
+    margin: auto;
+}
+
+.header {
+
+    &_navbar {
+        display: flex;
+        justify-content:space-between;
+        background-color: #ccc;
+        padding: 10px 0;
+
+        .logo {
+            font-size: 27px;
+        }
+    }
+
+    &_content {
+        display: flex;
+        justify-content: space-between;
+
+        &_edge-left {
+            height: 100;
+            flex-basis: 5%;
+            background-color: #333;
+            width: 20px;
+        }
+
+        &_text {
+            text-align: center;
+        }
+
+        &_image {
+            flex: flex-end;
+
+            img {
+                height: 80%;
+                width: 40%;
+            }
+        }
+    }
+
 }

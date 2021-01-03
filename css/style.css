@@ -1,3 +1,28 @@
 .wrapper {
   max-width: 1300px;
-  width: 100%; }
+  width: 100%;
+  margin: auto; }
+
+.header_navbar {
+  display: flex;
+  justify-content: space-between;
+  background-color: #ccc;
+  padding: 10px 0; }
+  .header_navbar .logo {
+    font-size: 27px; }
+
+.header_content {
+  display: flex;
+  justify-content: space-between; }
+  .header_content_edge-left {
+    height: 100;
+    flex-basis: 5%;
+    background-color: #333;
+    width: 20px; }
+  .header_content_text {
+    text-align: center; }
+  .header_content_image {
+    flex: flex-end; }
+    .header_content_image img {
+      height: 80%;
+      width: 40%; }
