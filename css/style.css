@@ -31,7 +31,7 @@ body {
   .header_content_text {
     flex-basis: 50%;
     text-align: center; }
-    .header_content_text i {
+    .header_content_text .fas {
       font-size: 20px; }
   .header_content_image {
     flex-basis: 45%; }
