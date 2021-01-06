@@ -1,3 +1,9 @@
+* {
+  box-sizing: border-box; }
+
+body {
+  margin: 0; }
+
 .wrapper {
   max-width: 1300px;
   width: 100%;
@@ -10,19 +16,25 @@
   padding: 10px 0; }
   .header_navbar .logo {
     font-size: 27px; }
+  .header_navbar .menu-icon .fas {
+    font-size: 30px; }
 
 .header_content {
   display: flex;
-  justify-content: space-between; }
+  justify-content: space-between;
+  height: 45rem; }
   .header_content_edge-left {
     height: 100;
     flex-basis: 5%;
     background-color: #333;
     width: 20px; }
   .header_content_text {
+    flex-basis: 50%;
     text-align: center; }
+    .header_content_text i {
+      font-size: 20px; }
   .header_content_image {
-    flex: flex-end; }
+    flex-basis: 45%; }
     .header_content_image img {
-      height: 80%;
-      width: 40%; }
+      height: 100%;
+      width: 100%; }

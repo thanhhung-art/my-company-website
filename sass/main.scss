@@ -1,3 +1,9 @@
+* {box-sizing: border-box;}
+
+body {
+    margin: 0;
+}
+
 .wrapper {
     max-width: 1300px;
     width: 100%;
@@ -15,11 +21,18 @@
         .logo {
             font-size: 27px;
         }
+
+        .menu-icon {
+            .fas {
+                font-size: 30px;
+            }
+        }
     }
 
     &_content {
         display: flex;
         justify-content: space-between;
+        height : 45rem;
 
         &_edge-left {
             height: 100;
@@ -29,15 +42,20 @@
         }
 
         &_text {
+            flex-basis: 50%;
             text-align: center;
+
+            i {
+                font-size: 20px;
+            }
         }
 
         &_image {
-            flex: flex-end;
+            flex-basis: 45%;
 
             img {
-                height: 80%;
-                width: 40%;
+                height: 100%;
+                width: 100%;
             }
         }
     }
