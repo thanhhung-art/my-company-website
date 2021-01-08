@@ -29,7 +29,7 @@ body {
     &_navbar {
         display: flex;
         justify-content: space-between;
-        padding: 1rem 1rem;
+        padding: 1rem 3rem;
 
         &_logo {
             font-size: 25px;
@@ -40,14 +40,30 @@ body {
     }
 
     &_text {
-        padding: 2rem 1rem;
+        padding: 2rem 3rem;
         margin-top: 10rem;
 
+        span {
+            font-size: 23px;
+        }
         h1 {
             font-size: 50px;
             padding: 20px 0;
             margin: 0;
         }
 
+    }
+}
+
+.about-us {
+
+    &_row-1 {
+        display: flex;
+        justify-content: space-between;
+
+        &_images {
+            width: 50px;
+            height: 100px;
+        }
     }
 }

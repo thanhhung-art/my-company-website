@@ -26,15 +26,24 @@ body {
   .header_navbar {
     display: flex;
     justify-content: space-between;
-    padding: 1rem 1rem; }
+    padding: 1rem 3rem; }
     .header_navbar_logo {
       font-size: 25px; }
     .header_navbar_menu {
       font-size: 25px; }
   .header_text {
-    padding: 2rem 1rem;
+    padding: 2rem 3rem;
     margin-top: 10rem; }
+    .header_text span {
+      font-size: 23px; }
     .header_text h1 {
       font-size: 50px;
       padding: 20px 0;
       margin: 0; }
+
+.about-us_row-1 {
+  display: flex;
+  justify-content: space-between; }
+  .about-us_row-1_images {
+    width: 50px;
+    height: 100px; }
