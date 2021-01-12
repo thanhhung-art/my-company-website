@@ -217,3 +217,35 @@ body {
         font-weight: bold;
     }
 }
+
+.loo-hudson {
+    position: relative;
+
+    &_image {
+
+        
+    }
+
+    &_text-wrap {
+        position: absolute;
+        padding-left: 6rem;
+        top: 75%;
+
+        &_img {
+            
+            border-radius: 50%;
+        }
+
+        h1 {
+            margin: 0.5rem 0;
+        }
+
+        p {
+            margin-top: 0;
+        }
+    }
+}
+
+.contact-us {
+    display: block;
+}

@@ -146,3 +146,19 @@ body {
     padding-bottom: 5px;
     font-size: 20px;
     font-weight: bold; }
+
+.loo-hudson {
+  position: relative; }
+  .loo-hudson_text-wrap {
+    position: absolute;
+    padding-left: 6rem;
+    top: 75%; }
+    .loo-hudson_text-wrap_img {
+      border-radius: 50%; }
+    .loo-hudson_text-wrap h1 {
+      margin: 0.5rem 0; }
+    .loo-hudson_text-wrap p {
+      margin-top: 0; }
+
+.contact-us {
+  display: block; }
