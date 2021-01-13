@@ -50,12 +50,12 @@ body {
       margin: 0; }
 
 .wrapper_second {
-  padding: 4rem 4rem .5rem;
+  padding: 4rem 3rem .5rem;
   position: relative; }
   .wrapper_second::after {
     position: absolute;
     content: "";
-    width: 4.1rem;
+    width: 3.1rem;
     height: 100%;
     background-color: #e8e51c;
     right: 0;
@@ -78,9 +78,9 @@ body {
     flex-basis: 50%;
     padding: 3.5rem 1rem; }
     .about-us_row-2_col-left span {
-      font-size: 20px; }
+      font-size: 2rem; }
     .about-us_row-2_col-left h1 {
-      font-size: 50px;
+      font-size: 3.5rem;
       margin-top: 20px; }
   .about-us_row-2_col-right {
     flex-basis: 50%; }
@@ -169,7 +169,7 @@ body {
   .contact-us::after {
     position: absolute;
     content: "";
-    width: 4.1rem;
+    width: 3.1rem;
     height: 100%;
     background-color: #e8e51c;
     right: 0;
@@ -200,3 +200,100 @@ footer {
   text-align: center;
   padding: 4rem;
   font-size: 20px; }
+
+@media screen and (max-width: 700px) {
+  .text-title {
+    font-size: 2.5rem; }
+  .header {
+    height: 30rem; }
+    .header_navbar {
+      padding: 3rem; }
+    .header_text {
+      margin-top: 3rem; }
+      .header_text span {
+        font-size: 1.5rem; }
+      .header_text h1 {
+        font-size: 3rem; }
+  .wrapper_second {
+    padding: 3rem 3rem .5rem; }
+  .about-us_row-1 {
+    display: grid;
+    grid-template-columns: auto; }
+  .about-us_row-2 {
+    padding: 0;
+    flex-direction: column; }
+    .about-us_row-2_col-left {
+      flex-basis: 100%;
+      padding: 2rem 0; }
+      .about-us_row-2_col-left span {
+        font-size: 1rem; }
+      .about-us_row-2_col-left h1 {
+        font-size: 2rem;
+        margin-top: 20px; }
+    .about-us_row-2_col-right {
+      flex-basis: 100%;
+      padding: 0; }
+      .about-us_row-2_col-right .text {
+        margin: 0; }
+  .my-work_title {
+    font-size: 2rem;
+    padding: 0; }
+  .my-work_images {
+    display: grid;
+    grid-template-columns: auto; }
+  .my-latest-work {
+    background-color: #000;
+    color: #fff;
+    padding: 6rem; }
+    .my-latest-work h1 {
+      margin-top: 0; }
+    .my-latest-work_images {
+      display: grid;
+      grid-template-columns: auto; }
+    .my-latest-work_text {
+      padding: .7rem 0;
+      font-size: 14px; }
+    .my-latest-work_btn {
+      color: #fff;
+      text-decoration: none;
+      border-bottom: 3px solid #fff;
+      padding-bottom: 5px;
+      font-size: 20px;
+      font-weight: bold; }
+  .our-perfect-team_images {
+    grid-template-columns: auto;
+    padding: 3rem 0 1rem; }
+  .our-perfect-team_text {
+    padding: 0; }
+  .my-latest-work {
+    padding: 3rem; }
+  .loo-hudson_text-wrap {
+    padding-left: 3rem; }
+    .loo-hudson_text-wrap_img {
+      width: 90px; }
+    .loo-hudson_text-wrap h1 {
+      font-size: 2.5rem; }
+    .loo-hudson_text-wrap p {
+      margin-top: 0; }
+  .contact-us {
+    margin-top: 15rem;
+    padding: 3rem; }
+    .contact-us .text {
+      font-size: 14px; }
+    .contact-us_links {
+      display: flex;
+      flex-direction: column; }
+      .contact-us_links .address {
+        flex-basis: 100%; }
+      .contact-us_links .phone {
+        flex-basis: 100%; }
+      .contact-us_links .email {
+        flex-basis: 100%; }
+      .contact-us_links .fas {
+        font-size: 50px; }
+      .contact-us_links div {
+        margin: 10px 0; }
+      .contact-us_links h3 {
+        font-size: 1rem; }
+      .contact-us_links p {
+        margin-bottom: 0; } }
