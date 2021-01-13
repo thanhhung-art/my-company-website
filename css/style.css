@@ -161,4 +161,42 @@ body {
       margin-top: 0; }
 
 .contact-us {
-  display: block; }
+  margin-top: 14rem;
+  background-color: #000;
+  color: #fff;
+  padding: 6rem;
+  position: relative; }
+  .contact-us::after {
+    position: absolute;
+    content: "";
+    width: 4.1rem;
+    height: 100%;
+    background-color: #e8e51c;
+    right: 0;
+    top: 0; }
+  .contact-us h1 {
+    margin: 0 0 20px; }
+  .contact-us .text {
+    font-size: 17px;
+    padding-bottom: 20px; }
+  .contact-us_links {
+    display: flex; }
+    .contact-us_links .address {
+      flex-basis: 33%; }
+    .contact-us_links .phone {
+      flex-basis: 33%; }
+    .contact-us_links .email {
+      flex-basis: 33%; }
+    .contact-us_links .fas {
+      font-size: 50px; }
+    .contact-us_links h3 {
+      font-size: 30px; }
+    .contact-us_links p {
+      margin-bottom: 0; }
+
+footer {
+  background-color: #ccc;
+  color: #fff;
+  text-align: center;
+  padding: 4rem;
+  font-size: 20px; }

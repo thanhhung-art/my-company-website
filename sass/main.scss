@@ -70,7 +70,7 @@ body {
 .wrapper_second {
     padding: 4rem 4rem .5rem;
     position: relative;
-    
+
     &::after {
         position: absolute;
         content: "";
@@ -91,7 +91,7 @@ body {
 
         &_images {
             cursor: pointer;
-            
+
             img {
                 width: 100%;
                 height: 100%;
@@ -140,7 +140,7 @@ body {
         border: 4px solid #fff;
         cursor: pointer;
     }
-    
+
     img:hover {
         border: 4px solid $color-primary;
     }
@@ -185,7 +185,7 @@ body {
             font-size: 16px;
         }
     }
-    
+
 }
 
 .my-latest-work {
@@ -223,7 +223,7 @@ body {
 
     &_image {
 
-        
+
     }
 
     &_text-wrap {
@@ -232,7 +232,7 @@ body {
         top: 75%;
 
         &_img {
-            
+
             border-radius: 50%;
         }
 
@@ -247,5 +247,59 @@ body {
 }
 
 .contact-us {
-    display: block;
+    margin-top: 14rem;
+    background-color: #000;
+    color: #fff;
+    padding: 6rem;
+    position: relative;
+
+    &::after {
+        position: absolute;
+        content: "";
+        width: 4.1rem;
+        height: 100%;
+        background-color: $color-primary;
+        right: 0;
+        top: 0;
+    }
+
+    h1 {
+        margin: 0 0 20px;
+    }
+
+    .text {
+        font-size: 17px;
+        padding-bottom: 20px;
+    }
+
+    &_links {
+        display: flex;
+
+        .address {
+            flex-basis: 33%;
+        }
+        .phone {
+            flex-basis:33%;
+        }
+        .email {
+            flex-basis:33%;
+        }
+        .fas {
+            font-size: 50px;
+        }
+        h3 {
+            font-size: 30px;
+        }
+        p {
+            margin-bottom: 0;
+        }
+    }
+}
+
+footer {
+    background-color: #ccc;
+    color: #fff;
+    text-align: center;
+    padding: 4rem;
+    font-size: 20px;
 }
