@@ -1,27 +1,30 @@
 $color-primary: rgb(232, 229, 28);
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 600px) {
     .text-title {
         font-size: 2.5rem;
     }
 
+    .btn {
+        font-size: 16px;
+    }
+
     .header {
-        height: 30rem;
-    
+
         &_navbar {
             padding: 3rem;
         }
-    
+
         &_text {
             margin-top: 3rem;
-    
+
             span {
-                font-size: 1.5rem;
+                font-size: 1.3rem;
             }
             h1 {
-                font-size: 3rem;
+                font-size: 2.7rem;
             }
-    
+
         }
     }
 
@@ -32,32 +35,31 @@ $color-primary: rgb(232, 229, 28);
     .about-us {
 
         &_row-1 {
-            display: grid;
             grid-template-columns: auto;
             }
-    
+
             &_row-2 {
                 padding: 0;
                 flex-direction: column;
-    
+
                 &_col-left {
                     flex-basis: 100%;
                     padding: 2rem 0;
-    
+
                     span {
                         font-size: 1rem;
                     }
-    
+
                     h1 {
                         font-size: 2rem;
                         margin-top: 20px;
                     }
                 }
-    
+
                 &_col-right {
                     flex-basis: 100%;
                     padding: 0;
-                    
+
                     .text {
                         margin: 0;
                     }
@@ -71,41 +73,12 @@ $color-primary: rgb(232, 229, 28);
             font-size: 2rem;
             padding: 0;
         }
-    
+
         &_images {
             display: grid;
             grid-template-columns: auto;
         }
-    
-    }
-    
-    .my-latest-work {
-        background-color: #000;
-        color: #fff;
-        padding: 6rem;
-    
-        h1 {
-            margin-top: 0;
-        }
-    
-        &_images {
-            display: grid;
-            grid-template-columns: auto;
-        }
-    
-        &_text {
-            padding: .7rem 0;
-            font-size: 14px;
-        }
-    
-        &_btn {
-            color: #fff;
-            text-decoration: none;
-            border-bottom: 3px solid #fff;
-            padding-bottom: 5px;
-            font-size: 20px;
-            font-weight: bold;
-        }
+
     }
 
     .our-perfect-team {
@@ -114,48 +87,62 @@ $color-primary: rgb(232, 229, 28);
             grid-template-columns: auto;
             padding: 3rem 0 1rem;
         }
-    
+
         &_text {
             padding: 0;
         }
-    
+
     }
 
     .my-latest-work {
         padding: 3rem;
+
+        h1 {
+            margin-top: 0;
+        }
+
+        &_images {
+            display: grid;
+            grid-template-columns: auto;
+        }
+
+        &_text {
+            padding: .7rem 0;
+            font-size: 14px;
+        }
     }
 
     .loo-hudson {
-    
+
         &_text-wrap {
             padding-left: 3rem;
-    
+
             &_img {
                 width: 90px;
             }
-    
+
             h1 {
                 font-size: 2.5rem;
             }
-    
+
             p {
                 margin-top: 0;
             }
         }
     }
-    
+
     .contact-us {
         margin-top: 15rem;
         padding: 3rem;
-    
+
         .text {
             font-size: 14px;
         }
-    
+
         &_links {
             display: flex;
             flex-direction: column;
-    
+
             .address {
                 flex-basis: 100%;
             }
@@ -184,4 +171,45 @@ $color-primary: rgb(232, 229, 28);
 }
 
 
+@media screen and (max-width: 900px) {
+    .wrapper_second {
+        padding: 3rem 3rem .5rem;
+    }
 
+    .about-us {
+
+        &_row-1 {
+            grid-template-columns: auto auto;
+            grid-gap: 10px;
+            }
+
+        &_row-2 {
+
+            &_col-left {
+                padding: 6rem 0;
+            }
+        }
+    }
+
+    .my-work {
+
+        &_images {
+            grid-template-columns: auto auto;
+        }
+
+    }
+
+    .our-perfect-team {
+
+        &_images {
+            grid-template-columns: auto auto;
+        }
+    }
+
+    .my-latest-work {
+
+        &_images {
+            grid-template-columns: auto auto;
+        }
+    }
+}

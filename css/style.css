@@ -15,7 +15,7 @@ body {
   font-size: 20px;
   padding: .5rem 1.5rem;
   background-color: #e8e51c;
-  color: #333;
+  color: #000;
   display: inline-block; }
 
 .text-title {
@@ -201,23 +201,22 @@ footer {
   padding: 4rem;
   font-size: 20px; }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 600px) {
   .text-title {
     font-size: 2.5rem; }
-  .header {
-    height: 30rem; }
-    .header_navbar {
-      padding: 3rem; }
-    .header_text {
-      margin-top: 3rem; }
-      .header_text span {
-        font-size: 1.5rem; }
-      .header_text h1 {
-        font-size: 3rem; }
+  .btn {
+    font-size: 16px; }
+  .header_navbar {
+    padding: 3rem; }
+  .header_text {
+    margin-top: 3rem; }
+    .header_text span {
+      font-size: 1.3rem; }
+    .header_text h1 {
+      font-size: 2.7rem; }
   .wrapper_second {
     padding: 3rem 3rem .5rem; }
   .about-us_row-1 {
-    display: grid;
     grid-template-columns: auto; }
   .about-us_row-2 {
     padding: 0;
@@ -241,10 +240,13 @@ footer {
   .my-work_images {
     display: grid;
     grid-template-columns: auto; }
+  .our-perfect-team_images {
+    grid-template-columns: auto;
+    padding: 3rem 0 1rem; }
+  .our-perfect-team_text {
+    padding: 0; }
   .my-latest-work {
-    background-color: #000;
-    color: #fff;
-    padding: 6rem; }
+    padding: 3rem; }
     .my-latest-work h1 {
       margin-top: 0; }
     .my-latest-work_images {
@@ -253,20 +255,6 @@ footer {
     .my-latest-work_text {
       padding: .7rem 0;
       font-size: 14px; }
-    .my-latest-work_btn {
-      color: #fff;
-      text-decoration: none;
-      border-bottom: 3px solid #fff;
-      padding-bottom: 5px;
-      font-size: 20px;
-      font-weight: bold; }
-  .our-perfect-team_images {
-    grid-template-columns: auto;
-    padding: 3rem 0 1rem; }
-  .our-perfect-team_text {
-    padding: 0; }
-  .my-latest-work {
-    padding: 3rem; }
   .loo-hudson_text-wrap {
     padding-left: 3rem; }
     .loo-hudson_text-wrap_img {
@@ -297,3 +285,18 @@ footer {
         font-size: 1rem; }
       .contact-us_links p {
         margin-bottom: 0; } }
+
+@media screen and (max-width: 900px) {
+  .wrapper_second {
+    padding: 3rem 3rem .5rem; }
+  .about-us_row-1 {
+    grid-template-columns: auto auto;
+    grid-gap: 10px; }
+  .about-us_row-2_col-left {
+    padding: 6rem 0; }
+  .my-work_images {
+    grid-template-columns: auto auto; }
+  .our-perfect-team_images {
+    grid-template-columns: auto auto; }
+  .my-latest-work_images {
+    grid-template-columns: auto auto; } }
