@@ -44,6 +44,50 @@ $color-primary: #f1c50e;
 }
 
 
+@media screen and (max-width: 900px) {
+    .wrapper_second {
+        padding: 3rem 3rem .5rem;
+    }
+
+    .about-us {
+
+        &_row-1 {
+            grid-template-columns: auto auto;
+            grid-gap: 10px;
+            }
+
+        &_row-2 {
+
+            &_col-left {
+                padding: 6rem 0;
+            }
+        }
+    }
+
+    .my-work {
+
+        &_images {
+            grid-template-columns: auto auto;
+        }
+
+    }
+
+    .our-perfect-team {
+
+        &_images {
+            grid-template-columns: auto auto;
+        }
+    }
+
+    .my-latest-work {
+
+        &_images {
+            grid-template-columns: auto auto;
+        }
+    }
+}
+
+
 @media screen and (max-width: 600px) {
     .text-title {
         font-size: 2.5rem;
