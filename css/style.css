@@ -98,25 +98,10 @@ img {
 .my-work_images {
   display: grid;
   grid-template-columns: auto auto auto;
-<<<<<<< HEAD
   grid-gap: 10px; }
 
 .my-work img {
   cursor: pointer; }
-=======
-  grid-gap: 6px; }
-  .my-work_images img {
-    position: relative;
-    cursor: pointer; }
-  .my-work_images_image {
-    overflow: hidden; }
-    .my-work_images_image_title {
-      position: absolute;
-      color: #fff;
-      font-weight: bold;
-      z-index: 1;
-      left: -20%; }
->>>>>>> 3f0aeefd0bb212c5cc15f5de9bb287a7315baf5c
 
 .my-work a {
   background-color: #fff;
@@ -217,6 +202,21 @@ footer {
   text-align: center;
   padding: 4rem;
   font-size: 20px; }
+
+@media screen and (max-width: 900px) {
+  .wrapper_second {
+    padding: 3rem 3rem .5rem; }
+  .about-us_row-1 {
+    grid-template-columns: auto auto;
+    grid-gap: 10px; }
+  .about-us_row-2_col-left {
+    padding: 6rem 0; }
+  .my-work_images {
+    grid-template-columns: auto auto; }
+  .our-perfect-team_images {
+    grid-template-columns: auto auto; }
+  .my-latest-work_images {
+    grid-template-columns: auto auto; } }
 
 @media screen and (max-width: 900px) {
   .wrapper_second {

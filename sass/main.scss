@@ -141,7 +141,6 @@ img {
     &_images {
         display: grid;
         grid-template-columns: auto auto auto;
-<<<<<<< HEAD
         grid-gap: 10px;
     }
 
@@ -150,32 +149,6 @@ img {
     }
 
     img:hover {
-=======
-        grid-gap: 6px;
-
-        img {
-            position: relative;
-            cursor: pointer;
-
-            &_:hover {
-
-            }
-        }
-
-
-        &_image {
-            overflow: hidden;
-            
-            &_title {
-               position: absolute;
-               color: #fff;
-               font-weight: bold;
-               z-index: 1;
-               left: -20%;
-            }
-        }
-
->>>>>>> 3f0aeefd0bb212c5cc15f5de9bb287a7315baf5c
         
     }
 
