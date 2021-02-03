@@ -14,7 +14,7 @@ body {
   text-decoration: none;
   font-size: 20px;
   padding: .5rem 1.5rem;
-  background-color: #e8e51c;
+  background-color: #f1c50e;
   color: #000;
   display: inline-block; }
 
@@ -25,11 +25,17 @@ body {
   font-size: 19px;
   line-height: 1.4; }
 
+img {
+  object-fit: cover; }
+
+.img-effect:hover {
+  opacity: .8; }
+
 .header {
-  background: url("../image/pexels-pixabay-163143.jpg");
+  background: url("../images/pexelsphoto3740657.jpeg");
   background-size: cover;
   background-repeat: none;
-  color: #fff;
+  color: #000;
   height: 30rem; }
   .header_navbar {
     display: flex;
@@ -57,19 +63,18 @@ body {
     content: "";
     width: 3.1rem;
     height: 100%;
-    background-color: #e8e51c;
+    background-color: #f1c50e;
     right: 0;
     top: 0; }
 
 .about-us_row-1 {
   display: grid;
   grid-template-columns: auto auto auto auto;
-  grid-gap: 20px; }
+  grid-gap: 10px; }
   .about-us_row-1_images {
     cursor: pointer; }
     .about-us_row-1_images img {
-      width: 100%;
-      height: 100%; }
+      object-fit: cover; }
 
 .about-us_row-2 {
   display: flex;
@@ -87,19 +92,16 @@ body {
 
 .my-work_title {
   font-size: 50px;
-  padding-left: 3rem; }
+  padding-left: 3rem;
+  margin-top: 0; }
 
 .my-work_images {
   display: grid;
   grid-template-columns: auto auto auto;
-  grid-gap: 6px; }
+  grid-gap: 10px; }
 
 .my-work img {
-  border: 4px solid #fff;
   cursor: pointer; }
-
-.my-work img:hover {
-  border: 4px solid #e8e51c; }
 
 .my-work a {
   background-color: #fff;
@@ -108,7 +110,7 @@ body {
 
 .our-perfect-team_images {
   display: grid;
-  grid-template-columns: auto auto auto auto;
+  grid-template-columns: auto auto auto auto auto;
   grid-gap: 10px;
   padding: 5rem 0 1rem; }
 
@@ -171,7 +173,7 @@ body {
     content: "";
     width: 3.1rem;
     height: 100%;
-    background-color: #e8e51c;
+    background-color: #f1c50e;
     right: 0;
     top: 0; }
   .contact-us h1 {
@@ -201,29 +203,45 @@ footer {
   padding: 4rem;
   font-size: 20px; }
 
-@media screen and (max-width: 600px) {
-  .text-title {
-    font-size: 2.5rem; }
-  .btn {
-    font-size: 16px; }
-  .header_navbar {
-    padding: 3rem; }
-  .header_text {
-    margin-top: 3rem; }
-    .header_text span {
-      font-size: 1.3rem; }
-    .header_text h1 {
-      font-size: 2.7rem; }
+@media screen and (max-width: 900px) {
   .wrapper_second {
     padding: 3rem 3rem .5rem; }
   .about-us_row-1 {
+    grid-template-columns: auto auto;
+    grid-gap: 10px; }
+  .about-us_row-2_col-left {
+    padding: 6rem 0; }
+  .my-work_images {
+    grid-template-columns: auto auto; }
+  .our-perfect-team_images {
+    grid-template-columns: auto auto; }
+  .my-latest-work_images {
+    grid-template-columns: auto auto; } }
+
+@media screen and (max-width: 600px) {
+  .text-title {
+    font-size: 2.5rem; }
+  .header {
+    height: 30rem; }
+    .header_navbar {
+      padding: 3rem; }
+    .header_text {
+      margin-top: 3rem; }
+      .header_text span {
+        font-size: 1.5rem; }
+      .header_text h1 {
+        font-size: 3rem; }
+  .wrapper_second {
+    padding: 3rem 3rem .5rem; }
+  .about-us_row-1 {
+    display: grid;
     grid-template-columns: auto; }
   .about-us_row-2 {
     padding: 0;
     flex-direction: column; }
     .about-us_row-2_col-left {
       flex-basis: 100%;
-      padding: 2rem 0; }
+      padding: 2rem 0 .5rem; }
       .about-us_row-2_col-left span {
         font-size: 1rem; }
       .about-us_row-2_col-left h1 {
@@ -236,17 +254,15 @@ footer {
         margin: 0; }
   .my-work_title {
     font-size: 2rem;
-    padding: 0; }
+    padding: 0;
+    margin-top: 2rem; }
   .my-work_images {
     display: grid;
     grid-template-columns: auto; }
-  .our-perfect-team_images {
-    grid-template-columns: auto;
-    padding: 3rem 0 1rem; }
-  .our-perfect-team_text {
-    padding: 0; }
   .my-latest-work {
-    padding: 3rem; }
+    background-color: #000;
+    color: #fff;
+    padding: 6rem; }
     .my-latest-work h1 {
       margin-top: 0; }
     .my-latest-work_images {
@@ -255,16 +271,33 @@ footer {
     .my-latest-work_text {
       padding: .7rem 0;
       font-size: 14px; }
+    .my-latest-work_btn {
+      color: #fff;
+      text-decoration: none;
+      border-bottom: 3px solid #fff;
+      padding-bottom: 5px;
+      font-size: 20px;
+      font-weight: bold; }
+  .our-perfect-team_images {
+    grid-template-columns: auto;
+    padding: 3rem 0 1rem; }
+  .our-perfect-team_text {
+    padding: 0; }
+  .my-latest-work {
+    padding: 3rem; }
+  .loo-hudson_image img {
+    height: 160px; }
   .loo-hudson_text-wrap {
     padding-left: 3rem; }
     .loo-hudson_text-wrap_img {
-      width: 90px; }
+      width: 150px;
+      height: 150px; }
     .loo-hudson_text-wrap h1 {
       font-size: 2.5rem; }
     .loo-hudson_text-wrap p {
       margin-top: 0; }
   .contact-us {
-    margin-top: 15rem;
+    margin-top: 19rem;
     padding: 3rem; }
     .contact-us .text {
       font-size: 14px; }
@@ -285,18 +318,3 @@ footer {
         font-size: 1rem; }
       .contact-us_links p {
         margin-bottom: 0; } }
-
-@media screen and (max-width: 900px) {
-  .wrapper_second {
-    padding: 3rem 3rem .5rem; }
-  .about-us_row-1 {
-    grid-template-columns: auto auto;
-    grid-gap: 10px; }
-  .about-us_row-2_col-left {
-    padding: 6rem 0; }
-  .my-work_images {
-    grid-template-columns: auto auto; }
-  .our-perfect-team_images {
-    grid-template-columns: auto auto; }
-  .my-latest-work_images {
-    grid-template-columns: auto auto; } }
